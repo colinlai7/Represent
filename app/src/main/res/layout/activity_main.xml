@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="154dp"
+        android:text="Enter your location to begin:"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:fontFamily="@font/autour_one" />
+
+    <Button
+        android:id="@+id/zipgo"
+        android:layout_width="61dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="305dp"
+        android:layout_marginTop="194dp"
+        android:text="Go" />
+
+    <Button
+        android:id="@+id/locationgo"
+        android:layout_width="62dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zipgo"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="305dp"
+        android:layout_marginTop="40dp"
+        android:text="Go" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-8dp"
+        android:layout_marginTop="196dp"
+        android:ems="10"
+        android:hint="ZIP Code"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/currlocationtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignBottom="@+id/locationgo"
+        android:layout_marginStart="-5dp"
+        android:layout_marginBottom="13dp"
+        android:text="Use Current Location"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/locimg"
+        android:layout_width="33dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/currlocationtext"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="-6dp"
+        android:layout_toEndOf="@+id/currlocationtext"
+        app:srcCompat="@drawable/locimg" />
+
+    <Button
+        android:id="@+id/randomgo"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="105dp"
+        android:layout_marginLeft="105dp"
+        android:layout_marginBottom="165dp"
+        android:background="@color/colorPrimary"
+        android:text="Try random location"
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp"
+        android:typeface="normal" />
+
+    <TextView
+        android:id="@+id/ortext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zipgo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="or"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/represent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Represent!"
+        android:textColor="@color/colorPrimary"
+        android:textSize="48sp"
+        app:fontFamily="@font/autour_one" />
+
+</RelativeLayout>

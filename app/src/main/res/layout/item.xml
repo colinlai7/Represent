@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cv"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+
+        <TextView
+            android:id="@+id/pName"
+            android:layout_width="279dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pType"
+            android:layout_alignStart="@+id/pType"
+            android:layout_marginStart="-1dp"
+            android:layout_marginTop="0dp"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pParty"
+            android:layout_width="168dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/pName"
+            android:layout_alignBottom="@+id/pPhoto"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="16dp"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/pType"
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="202dp"
+            android:layout_marginRight="202dp"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/pPhoto"
+            android:layout_width="112dp"
+            android:layout_height="112dp"
+            android:layout_alignTop="@+id/pType"
+            android:layout_alignEnd="@+id/pButton"
+            android:layout_marginTop="2dp"
+            android:adjustViewBounds="true"
+            android:clickable="false"
+            android:cropToPadding="true" />
+
+        <Button
+            android:id="@+id/pButton"
+            android:layout_width="366dp"
+            android:layout_height="27dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="121dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:background="?attr/colorButtonNormal"
+            android:text="View Contact Info"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
